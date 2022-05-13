@@ -1,1 +1,37 @@
-# LumenSpectra
+# Beleuchtungsstärken und Fremdlichtfestigkeit bei Sensoren
+
+## Wieso sind optische Sensoren empfindlich gegenüber Umgebungslicht?
+Alle optischen Sensoren können durch Umgebungslicht - der Fachbegriff dafür ist "Fremdlicht" - gestört werden. Je nach Sensorauslegung können schon wenige Hundert Lux zum Ausfall eines Sensors führen. Sensoren für den Außenbereich müssen Fremdlichtfestigkeiten von >100 klx aufweisen. Die meisten optischen Sensoren senden eigenes Licht ("Nutzlicht") aus, das auf das anzutastende Objekt fällt. Das Objekt reflektiert einen Teil des Nutzlichts zurück zum Sensor. Je nach Sensorverfahren d.h. je nachdem welche Objekteigenschaft gemessen werden soll, wie etwa der Objektabstand, die Objektfarbe oder die Objektpräsenz, wird die Lichtlaufzeit, das Lichtspektrum oder die Lichtintensität/-verteilung oder ein anderer Lichtparameter vom Sensor ausgewertet.
+
+Auf die Empfängeroptik des Sensors fällt jedoch nicht nur dieses Nutzlicht sondern zusätzlich auch Fremdlicht. Die Quelle des Fremdlichts ist meistens das Sonnenlicht oder in geschlossenen Räumen die Allgemeinbeleuchtung wie z.B. Halogen- oder LED-Leuchten.
+
+Nahezu alle optische Sensoren verwenden intensitätsmoduliertes Nutzlicht. Eine Infrarot-Fernbedienung puls z.B. das Nutzlicht mit einer Frequenz von 38 kHz. Da das Fremdlicht meistens Gleichlicht ist, kann so im Empfänger des Sensors der Fremdlichtanteil nach der Photodiode per Hochpassfilter elektronisch unterdrückt werden. Dies funktioniert aber nur solange wie das Fremdlicht die Photodiode nicht übersteuert. Außerdem nimmt in jedem Fall das Rauschen des Nutzsignals durch das Fremdlicht zu und damit die Messgenauigkeit des Sensors ab.
+Hinzu kommt, dass die Allgemeinbeleuchtung ebenfalls oft intensitätsmoduliert ist: LEDs werden oft über Pulsweitenmodulation gedimmt, Leuchtstoffröhren werden mit Wechselspannung betrieben.
+
+Wenn es die Applikation und die Sensorkosten zulassen, wird möglichst Nutzlicht in dem Bereich verwendet, in dem das Spektrum des Fremdlichts eine geringe spektrale Leistungsdichte hat: Daher versucht man möglichst Infrarotlicht zu verwenden - je langwelliger destso besser, jedoch auch desto teurer.
+
+Weiter verwenden alle optischen Sensoren empfangsseitig optische Bandpassfilter, deren Durchlassbereich möglichst nur dem Nutzlichtspektrum entspricht. Das Fremdlicht wird hier spektral weitgehend ausgeblendet. Jedoch kommt innerhalb des Durchlassbereichs immer noch Fremdlicht zum Empfänger des Sensors.
+Daher verwendet man gerne schmalbandiges Laserlicht und passt man den Durchlassbereich des optischen Bandpassfilters so eng wie möglich daran an. Dies ist aber bei kostensensitiven Sensoren wie einfachen Lichttastern oder Lichtgittern nicht wirtschaftlich, weshalb hier meistens nur monochromatische LEDs als Nutzlichtquellen und nur eingefärbte Kunststoffscheiben als "Bandpassfilter" Verwendung finden.
+
+Bis auf wenige Ausnahmen im Militär- oder Weltraumbereich sind optische Sensoren trotzdem in der Praxis fremdlichtempfindlich. Denn Präzisionsoptiken wie genau gefertigte Linsen und Filter sind sehr kostspielig.
+
+## Wieso wird die Fremdlichtfestigkeit in Lux (lx) angegeben?
+Damit ein Anwender abschätzen kann, ob die Verfügbarkeit eines optischen Sensors trotz Fremdlicht gegeben ist, muss die Fremdlichtfestigkeit des Sensors in irgend einer Weise spezifiziert sein.
+Idealerweise würde der Sensorhersteller hierfür die Nutzlichtwellenlänge und den Durchlassbereich des Sensorempfängers sowie die Modulation des Nutzlichts angeben. Dann könnte die Fremdlichtfestigkeit als maximale Bestrahlungsstärke für Gleichlicht bzw. moduliertes Licht spezifiziert werden.
+
+Eine solche Sensor-Spezifikation ist jedoch aus mehreren Gründen nicht praktikabel:
+
+Der Sensorhersteller möchte aus Gründen des IP-Schutzes nicht diese optischen Eigenschaften des Sensors veröffentlichen.
+Der Anwender hat selten die Möglichkeit den Fremdlichtpegel spektral- und zeitaufgelöst zu bestimmen.
+Deshalb wird die Fremdlichtfestigkeit von Sensoren allgemein als maximale Beleuchtungsstärke in Lux auf dem Sensorempfänger spezifiziert.
+Zugegebenermaßen ist eine solche Spezifikation nicht sonderlich wasserdicht, denn sie berücksichtigt weder das Fremdlichtspektrum, eine Richtung des einfallenden Fremdlichts, noch eine mögliche Modulation des Fremdlichts.
+
+In Normen zu bestimmten Sensoren ist jedoch zur Bestimmung der Fremdlichtfestigkeit der Messaufbau für die zulässige Beleuchtungsstärke näher spezifiziert. Z.B. wird ein Halogenscheinwerfer mit einer bestimmten elektrischen Leistung und Reflektorgröße vorgeschrieben, der entlang der Sichtlinie des Sensors in den Sensor hinein strahlt.
+
+
+
+Prof. Dr. S. Mack, 13. Mai 2022.
+
+License
+-----
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
