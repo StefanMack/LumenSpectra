@@ -29,7 +29,7 @@ Zugegebenermaßen ist eine solche Spezifikation nicht sonderlich wasserdicht, de
 In Normen zu bestimmten Sensoren ist jedoch zur Bestimmung der Fremdlichtfestigkeit der Messaufbau für die zulässige Beleuchtungsstärke näher spezifiziert. Z.B. wird ein Halogenscheinwerfer mit einer bestimmten elektrischen Leistung und Reflektorgröße vorgeschrieben, der entlang der Sichtlinie des Sensors in den Sensor hinein strahlt.
 
 ## Fremdlicht-Bestrahlungsstärke aus der Beleuchtungsstärke abschätzen
-Im Jupyter Notebook wird exemplarisch gezeigt, wie bei Kenntnis des Fremdlichtspektrums und der Beleuchtungsstärke des Fremdlichts die Bestrahlungsstärke auf dem Empfänger des Sensors abgeschätzt werden kann.
+Im Jupyter Notebook wird exemplarisch gezeigt, wie bei Kenntnis des Fremdlichtspektrums und der Beleuchtungsstärke des Fremdlichts die Bestrahlungsstärke auf der Photodiode des Sensor-Empfängers abgeschätzt werden kann.
 
 > Hinweis: Wenn Sie oben im File Explorer auf eine der beiden Jupyter Notebooks (Endung ".ipnyb") klicken, dann wird lediglich ein Viewer geöffnet, in dem Sie das Notebook nur anschauen können. *Dieser einfache Viewer funktioniert jedoch nicht wirklich zuverlässig.*  
 **Zum Anschauen verwenden Sie daher bitte den speziellen Viewer für Jupyter-Notebooks "nbviewer" [über diesen Link](https://nbviewer.jupyter.org/github/StefanMack/LumenSpectra/blob/main/lumenUndSpektren.ipynb).**
