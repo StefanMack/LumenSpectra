@@ -44,7 +44,7 @@ Dabei wird der Wert der Bestrahlungsstärke des Fremdlichts so lange variiert, b
 Möchten Sie die Codebeispiele darin einzeln ausführen und ändern, dann klicken Sie bitte auf das Icon "launch|binder". **Das Starten des Webservice binder kann bis zu einer Minute dauern.**
 
 
-Prof. Dr. S. Mack, 13. Mai 2022.
+Prof. Dr. S. Mack, 14. Mai 2022.
 
 License
 -----
