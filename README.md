@@ -9,7 +9,7 @@ Man unterscheidet zwischen indirektem und direktem Fremdlicht:
 Indirektes Fremdlicht, ist Fremdlicht das auf das Objekt fällt und zusammen mit dem Nutzlicht zurück zum Sensor reflektiert wird. Indirektes Fremdlicht addiert sich auf das Nutzlicht auf.
 Direktes Fremdlicht fällt direkt auf den Empfänger des Sensors und gelangt dadurch auf dessen Photodiode. Dirketes Fremdlicht kann man somit auch als ein Blenden des Sensors bezeichnen.
 
-![Fremdlicht](/skizzeNutzFremdLicht) 
+![Fremdlicht](/skizzeNutzFremdLicht.png) 
 
 Nahezu alle optische Sensoren verwenden intensitätsmoduliertes Nutzlicht. Eine Infrarot-Fernbedienung pulst beispielsweise das Nutzlicht mit einer Frequenz von 38 kHz. Da das Fremdlicht meistens Gleichlicht ist, kann so im Empfänger des Sensors der Fremdlichtanteil nach der Photodiode per Hochpassfilter elektronisch unterdrückt werden. Dies funktioniert aber nur solange wie das Fremdlicht die Photodiode nicht übersteuert. Außerdem nimmt in jedem Fall das Rauschen des Nutzsignals durch das Fremdlicht zu und damit die Messgenauigkeit des Sensors ab.
 Hinzu kommt, dass die Allgemeinbeleuchtung ebenfalls oft intensitätsmoduliert ist: LEDs werden oft über Pulsweitenmodulation gedimmt, Leuchtstoffröhren werden mit Wechselspannung betrieben.
